@@ -29,6 +29,8 @@ export const useMemberStore = defineStore(
   {
     // 网页端配置
     // persist: true,
+
+    // 多平台兼容API
     persist: {
       storage: {
         getItem(key) {
