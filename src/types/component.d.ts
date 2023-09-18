@@ -5,14 +5,18 @@
  */
 import 'vue'
 declare module 'vue' {
-  export interface GlobalComponents {
-    //
-  }
+    export interface GlobalComponents {
+        //
+    }
 }
 
 import MySwiper from './MySwiper.vue'
+import MyGuess from './MyGuess.vue'
 declare module 'vue' {
-  export interface GlobalComponents {
-    MySwiper: typeof MySwiper
-  }
+    export interface GlobalComponents {
+        MySwiper: typeof MySwiper
+        MyGuess: typeof MyGuess
+    }
 }
+
+export type MyGuessInstance = InstanceType<typeof MyGuess>
