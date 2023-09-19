@@ -5,9 +5,9 @@ import { http } from '@/utils/http'
 // 类型扩展
 type HotParams = PageParams & { subType?: string }
 export const getHotAPI = (url: string, data?: HotParams) => {
-    return http<HotResult>({
-        method: 'GET',
-        url,
-        data,
-    })
+  return http<HotResult>({
+    method: 'GET',
+    url,
+    data,
+  })
 }
