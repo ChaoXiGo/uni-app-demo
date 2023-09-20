@@ -96,5 +96,28 @@
                 "selectedIconPath": "static/tabs/user_selected.png"
             }
         ]
+	},
+	"subPackages": [
+		{
+			"root": "pages/my",
+			"pages": [
+				{
+					"path": "settings/settings",
+					"style": {
+						"navigationBarTitleText": "设置"
+					}
+				}
+			]
+		},
+		{
+			"root": "pagesMember",
+			"pages": [
+				{
+					"path": "settings/settings",
+					"style": {
+						"navigationBarTitleText": "设置"
+					}
+				}
+			]
     }
 }
